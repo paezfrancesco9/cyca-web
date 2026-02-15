@@ -1,0 +1,855 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Spectral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">CYCA</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Inicio</a></li>
+											<li><a href="generic.html">Sobre Nosotros</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>CYCA</h2>
+							<p>Contadores y Consultores Asociados<br />
+							Desde 1990 brindando servicios basados en la excelencia<br />
+							</p>
+							<ul class="actions special">
+								<li><a href="#" class="button primary">Un poco mas de nosotros</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly"></a>
+					</section>
+
+			<!-- One -->
+<section id="one" class="wrapper style1 special">
+    <div class="inner fade-section">
+        <header class="major fade-item" data-delay="0">
+            <h2>Sobre Nosotros<br /></h2>
+        </header>
+        <p class="fade-item zoom-item" data-delay="1">
+            CYCA Contadores y Consultores Asociados es una sociedad civil fundada en el año
+1997 por profesionales de reconocido prestigio con el objeto de proveer servicios
+profesionales en las áreas de Administración, Contabilidad y Consultoría de
+Empresas.
+        </p>
+        <div class="btn-container fade-item scale-item" data-delay="2">
+            <button class="btn-ver-mas">Ver Más</button>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Fondo empresarial */
+    #one.wrapper.style1.special {
+        background: linear-gradient(135deg, rgba(25, 60, 90, 0.85), rgba(50, 110, 70, 0.85));
+        padding: 50px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    #one h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: white;
+        text-align: center;
+    }
+
+    #one p {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 20px auto;
+        color: white;
+        text-align: center;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .btn-ver-mas {
+        background-color: #0a5f0c;
+        color: white;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-ver-mas:hover {
+        background-color: #084b09;
+        transform: scale(1.05);
+    }
+
+    /* Animaciones */
+    .fade-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1s ease;
+    }
+
+    .zoom-item {
+        transform: scale(0.9);
+    }
+
+    .scale-item {
+        transform: scale(0.8);
+    }
+
+    .fade-in {
+        opacity: 1 !important;
+        transform: translateY(0) scale(1) !important;
+    }
+</style>
+
+<script>
+    const observerSobreNosotros = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const items = entry.target.querySelectorAll('.fade-item');
+                items.forEach(item => {
+                    const delay = parseInt(item.getAttribute('data-delay')) * 1000; // 1s entre elementos
+                    setTimeout(() => {
+                        item.classList.add('fade-in');
+                    }, delay);
+                });
+            }
+        });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.fade-section').forEach(section => {
+        observerSobreNosotros.observe(section);
+    });
+</script>
+
+		<!-- Two -->
+<section id="two" class="wrapper alt style2 fade-section-two">
+    <section class="spotlight">
+        <div class="image fade-item-two" data-delay="3">
+            <img src="images/pic01.jpg" alt="CYCA Contadores" />
+        </div>
+        <div class="content">
+            <h2 class="fade-item-two" data-delay="0">Auditores y Contadores<br /></h2>
+            <h3 class="fade-item-two" data-delay="1">SERVICIOS PRESTADOS</h3>
+            <ul class="servicios-lista">
+                <li class="fade-item-two" data-delay="2">Auditoría de Estados Financieros</li>
+                <li class="fade-item-two" data-delay="2">Revisión Limitada de Estados Financieros de Aspectos Impositivos</li>
+                <li class="fade-item-two" data-delay="2">Auditoría de Lavado de Dinero y Financiamiento del Terrorismo</li>
+                <li class="fade-item-two" data-delay="2">Auditoría de Gestión</li>
+                <li class="fade-item-two" data-delay="2">Auditoria Forense</li>
+                <li class="fade-item-two" data-delay="2">Auditoría Informática</li>
+                <li class="fade-item-two" data-delay="2">Servicios de Contabilidad</li>
+                
+            </ul>
+            <div class="btn-container fade-item-two" data-delay="5">
+                <button class="btn-ver-mas-two">Ver Más</button>
+            </div>
+        </div>
+    </section>
+</section>
+
+<style>
+    /* Fondo sólido empresarial */
+    #two.wrapper.alt.style2 {
+        background-color: #1f3a44;
+        padding: 20px;
+        border-radius: 8px;
+        color: white;
+    }
+
+    #two h2, 
+    #two h3 {
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .servicios-lista {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .servicios-lista li {
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: white;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s ease;
+    }
+
+    /* Botón exclusivo de esta sección */
+    .btn-ver-mas-two {
+        background-color: #0a5f0c;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        transform: scale(0.9);
+        transition: all 0.5s ease;
+    }
+
+    .btn-ver-mas-two:hover {
+        background-color: #084b09;
+        transform: scale(1);
+    }
+
+    /* Animaciones independientes */
+    .fade-item-two {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s ease;
+    }
+
+    .fade-in-two {
+        opacity: 1 !important;
+        transform: translateY(0) scale(1) !important;
+    }
+</style>
+
+<script>
+    const observerTwoNew = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const items = entry.target.querySelectorAll('.fade-item-two');
+                items.forEach((item, index) => {
+                    const delay = parseInt(item.getAttribute('data-delay')) * 1000 + (index * 200);
+                    setTimeout(() => {
+                        item.classList.add('fade-in-two');
+                    }, delay);
+                });
+            }
+        });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.fade-section-two').forEach(section => {
+        observerTwoNew.observe(section);
+    });
+</script>
+
+
+<section class="spotlight abogados fade-section-abogados">
+    <div class="image fade-item-abogados" data-delay="0">
+        <img src="images/pic02.jpg" alt="Abogados CYCA" />
+    </div>
+    <div class="content">
+        <h2 class="fade-item-abogados" data-delay="1">ABOGADOS<br /></h2>
+        <h3 class="fade-item-abogados" data-delay="2">ÁREAS DE PRÁCTICA JURÍDICA</h3>
+        <ul class="servicios-lista">
+            <li class="fade-item-abogados" data-delay="3">Derecho Corporativo</li>
+            <li class="fade-item-abogados" data-delay="4">Derecho laboral y seguridad social</li>
+            <li class="fade-item-abogados" data-delay="5">Derecho societario, liquidaciones, fusiones y adquisiciones</li>
+            <li class="fade-item-abogados" data-delay="6">Contratos</li>
+            <li class="fade-item-abogados" data-delay="7">Gestión de cobranzas judiciales y extrajudiciales</li>
+            <li class="fade-item-abogados" data-delay="8">Litigios</li>
+        </ul>
+        <div class="btn-container fade-item-abogados" data-delay="9">
+            <button class="btn-ver-mas-abogados">Ver Más</button>
+        </div>
+    </div>
+</section>
+
+<style>
+    .spotlight.abogados {
+        background-color: #162b33;
+        padding: 50px;
+        border-radius: 8px;
+        color: white;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .spotlight.abogados .image img {
+        border-radius: 8px;
+        max-width: 100%;
+    }
+
+    .spotlight.abogados h2, 
+    .spotlight.abogados h3 {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .spotlight.abogados .servicios-lista {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .spotlight.abogados .servicios-lista li {
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: white;
+    }
+
+    /* Botón independiente de abogados */
+    .btn-ver-mas-abogados {
+        background-color: #0a5f0c;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        opacity: 1; /* visible por defecto después de animar */
+        transition: all 0.5s ease;
+    }
+
+    .btn-ver-mas-abogados:hover {
+        background-color: #084b09;
+    }
+
+    /* Animaciones exclusivas para abogados */
+    .fade-item-abogados {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s ease;
+    }
+
+    .fade-in-abogados {
+        opacity: 1 !important;
+        transform: translateY(0) scale(1) !important;
+    }
+</style>
+
+<script>
+    const observerAbogados = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const items = entry.target.querySelectorAll('.fade-item-abogados');
+                items.forEach(item => {
+                    const delay = parseInt(item.getAttribute('data-delay')) * 800;
+                    setTimeout(() => {
+                        item.classList.add('fade-in-abogados');
+                    }, delay);
+                });
+            }
+        });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.fade-section-abogados').forEach(section => {
+        observerAbogados.observe(section);
+    });
+</script>
+
+
+						<section class="spotlight compromiso fade-section-compromiso">
+    <div class="image slide-item-compromiso" data-delay="0">
+        <img src="images/pic03.jpg" alt="Compromiso y Experiencia Internacional" />
+    </div>
+    <div class="content slide-item-compromiso" data-delay="1">
+        <h2>Compromiso y Experiencia Internacional<br /></h2>
+        <p>
+            En CYCA ofrecemos soluciones contables, jurídicas y de consultoría con más de 30 años de experiencia.
+            Como miembros de INTEGRA-INTERNATIONAL, brindamos asesoría local respaldada por una red global presente en más de 60 países.
+        </p>
+    </div>
+</section>
+
+<style>
+    .spotlight.compromiso {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding: 40px;
+        background-color: #1f3a44; /* Color empresarial */
+        border-radius: 8px;
+        color: white;
+    }
+
+    .spotlight.compromiso h2 {
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    .spotlight.compromiso p {
+        color: white;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Animación desplazamiento derecha -> izquierda */
+    .slide-item-compromiso {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 1s ease; /* Velocidad media-lenta */
+    }
+
+    .slide-in-compromiso {
+        opacity: 1;
+        transform: translateX(0);
+    }
+</style>
+
+<script>
+    const observerCompromiso = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const items = entry.target.querySelectorAll('.slide-item-compromiso');
+                items.forEach(item => {
+                    const delay = parseInt(item.getAttribute('data-delay')) * 500; // 0.5s entre elementos
+                    setTimeout(() => {
+                        item.classList.add('slide-in-compromiso');
+                    }, delay);
+                });
+            }
+        });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.fade-section-compromiso').forEach(section => {
+        observerCompromiso.observe(section);
+    });
+</script>
+
+			<section id="three" class="wrapper style3 special fade-section-three">
+  <div class="inner">
+    <header class="major fade-item-three" data-delay="0">
+      <h2>Trabajos Realizados por la Consultoría</h2>
+      <p>
+        Nuestra experiencia profesional está respaldada por los trabajos realizados en las Entidades y Empresas del Sector Privado y Público con quienes hemos trabajado, aportando nuestros conocimientos especializados.
+      </p>
+    </header>
+
+    <ul class="features">
+      <li class="fade-item-three" data-delay="1">
+        <h3>EMPRESAS E INSTITUCIONES ESTATALES</h3>
+      </li>
+      <li class="fade-item-three" data-delay="2">
+        <h3>COMPAÑÍAS ASEGURADORAS</h3>
+      </li>
+      <li class="fade-item-three" data-delay="3">
+        <h3>ENTIDADES COOPERATIVAS</h3>
+      </li>
+      <li class="fade-item-three" data-delay="4">
+        <h3>CAJAS MUTUALES DE JUBILACIÓN</h3>
+      </li>
+      <li class="fade-item-three" data-delay="5">
+        <h3>FONDO GANADERO</h3>
+      </li>
+      <li class="fade-item-three" data-delay="6">
+        <h3>CLUBES SOCIALES Y DEPORTIVOS</h3>
+      </li>
+      <li class="fade-item-three" data-delay="7">
+        <h3>NACIONES UNIDAS EN EL PARAGUAY - PNUD</h3>
+      </li>
+      <li class="fade-item-three" data-delay="8">
+        <h3>BANCO INTERAMERICANO DE DESARROLLO - BID</h3>
+      </li>
+      <li class="fade-item-three" data-delay="9">
+        <h3>BANCO INTERNACIONAL DE RECONSTRUCCIÓN Y DESARROLLO - BIRF</h3>
+      </li>
+      <li class="fade-item-three" data-delay="10">
+        <h3>COMUNIDAD EUROPEA</h3>
+      </li>
+      <li class="fade-item-three" data-delay="11">
+        <h3>COMUNIDAD ALEMANA</h3>
+      </li>
+      <li class="fade-item-three" data-delay="12">
+        <h3>EMPRESAS INDUSTRIALES</h3>
+      </li>
+      <li class="fade-item-three" data-delay="13">
+        <h3>EMPRESAS COMERCIALES</h3>
+      </li>
+      <li class="fade-item-three" data-delay="14">
+        <h3>ENTIDADES SIN FINES DE LUCRO</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  /* Fondo un poquito más oscuro */
+  #three.wrapper.style3.special {
+    background-color: rgba(28, 50, 60, 0.95);
+    padding: 50px;
+    border-radius: 8px;
+    color: white;
+  }
+
+  /* Títulos */
+  #three h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  #three p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  /* Lista alternada */
+  #three .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+  }
+
+  #three .features li {
+    flex: 1 1 calc(50% - 20px);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center; /* Centra icono y texto verticalmente */
+    justify-content: center; /* Centra todo horizontalmente */
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* Iconos centrados con texto */
+  .features li i {
+    font-size: 20px;
+    color: #5bbf63; /* Verde corporativo */
+    min-width: 25px; /* Mantiene espacio uniforme */
+    text-align: center;
+  }
+
+  /* Texto más chico y centrado */
+  #three .features li h3 {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  /* Animación */
+  .fade-item-three {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 0.8s ease;
+  }
+
+  .fade-in-three {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  // Mapa de iconos para inyectar
+  const iconMap = {
+    "EMPRESAS E INSTITUCIONES ESTATALES": "fa-university",
+    "COMPAÑÍAS ASEGURADORAS": "fa-shield-alt",
+    "ENTIDADES COOPERATIVAS": "fa-handshake",
+    "CAJAS MUTUALES DE JUBILACIÓN": "fa-piggy-bank",
+    "FONDO GANADERO": "fa-seedling",
+    "CLUBES SOCIALES Y DEPORTIVOS": "fa-trophy",
+    "NACIONES UNIDAS EN EL PARAGUAY - PNUD": "fa-globe",
+    "BANCO INTERAMERICANO DE DESARROLLO - BID": "fa-landmark",
+    "BANCO INTERNACIONAL DE RECONSTRUCCIÓN Y DESARROLLO - BIRF": "fa-landmark",
+    "COMUNIDAD EUROPEA": "fa-flag",
+    "COMUNIDAD ALEMANA": "fa-flag-checkered",
+    "EMPRESAS INDUSTRIALES": "fa-industry",
+    "EMPRESAS COMERCIALES": "fa-store",
+    "ENTIDADES SIN FINES DE LUCRO": "fa-hands-helping"
+  };
+
+  // Inyectar iconos y centrar todo
+  document.querySelectorAll("#three .features li").forEach(li => {
+    const title = li.querySelector("h3").innerText.trim();
+    if (iconMap[title]) {
+      const icon = document.createElement("i");
+      icon.className = `fas ${iconMap[title]}`;
+      li.prepend(icon);
+    }
+  });
+
+  // Animación al hacer scroll
+  const observerThree = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const items = entry.target.querySelectorAll('.fade-item-three');
+        items.forEach(item => {
+          const delay = parseInt(item.getAttribute('data-delay')) * 150;
+          setTimeout(() => {
+            item.classList.add('fade-in-three');
+          }, delay);
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('.fade-section-three').forEach(section => {
+    observerThree.observe(section);
+  });
+</script>
+
+			<!-- CTA -->
+<section id="cta" class="wrapper style4" 
+    style="background: url('fondo-numeros.jpg') no-repeat center center; background-size: cover; padding: 50px;">
+    
+    <div class="inner contacto-container">
+
+        <!-- Formulario -->
+        <div class="formulario-box">
+            <h2>Formulario de Contacto</h2>
+            <form id="formularioContacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+                <div class="formulario-botones">
+                    <button type="button" id="enviarWhatsApp" class="btn-enviar">Confirmar</button>
+                    <button type="reset" class="btn-borrar">Limpiar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Mapa -->
+        <div class="mapa-box">
+            <h2>Nuestra Dirección</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4434.299751205478!2d-57.6064033238443!3d-25.285180877654405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da79e17a24de9%3A0xed10ac5dfb9655db!2sCYCA%20Contadores%20y%20Consultores%20Asociados!5e1!3m2!1ses-419!2spy!4v1753813959963!5m2!1ses-419!2spy" 
+                allowfullscreen loading="lazy"></iframe>
+            <p><strong>Dirección:</strong> Republica Dominicana N°717 c/ Siria (Barrio Jara) <br></p>
+            <p><strong >Tel:</strong> 0981 132 649</p>
+			<p><strong >Email:</strong> cyca@cyca.com.py - administración@cyca.com.py</p>
+        </div>
+
+    </div>
+
+    <script>
+      document.getElementById("enviarWhatsApp").addEventListener("click", function () {
+        const nombre = document.getElementById("nombre").value.trim();
+        const apellido = document.getElementById("apellido").value.trim();
+        const telefono = document.getElementById("telefono").value.trim();
+        const correo = document.getElementById("correo").value.trim();
+        const asunto = document.getElementById("asunto").value.trim();
+        const descripcion = document.getElementById("descripcion").value.trim();
+
+        const mensaje = `*Formulario de Contacto Legal*%0A
+        *Nombre:* ${nombre}%0A
+        *Apellido:* ${apellido}%0A
+        *Teléfono:* ${telefono}%0A
+        *Correo:* ${correo}%0A
+        *Asunto:* ${asunto}%0A
+        *Descripción:* ${descripcion}`;
+
+        const numeroWhatsApp = "595994136203"; 
+        const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+        window.open(url, "_blank");
+      });
+    </script>
+
+ <style>
+  /* Reseteo útil */
+  * { box-sizing: border-box; }
+
+  :root{
+    --gap-desktop: 28px;   /* separación en PC */
+    --gap-mobile: 12px;    /* separación en móvil */
+    --card-min-h: 520px;   /* altura mínima igual para ambos */
+  }
+
+  /* ====== LAYOUT: SIEMPRE DOS COLUMNAS ====== */
+  .contacto-container{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;   /* siempre 2 columnas */
+    gap: var(--gap-desktop);
+    align-items: stretch;                        /* misma altura */
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  /* Tarjetas iguales y con altura compartida */
+  .formulario-box,
+  .mapa-box{
+    height: 100%;
+    display: flex;               /* para poder estirar el contenido interno */
+    flex-direction: column;
+    background: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    box-shadow: 5px 5px 35px rgba(0,0,0,0.4);
+    padding: 18px;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1024px){
+    .contacto-container{
+      grid-template-columns: 50vw 50vw !important;  /* 2 columnas siempre */
+      gap: var(--gap-mobile);
+    }
+    .formulario-box, .mapa-box{ padding: 14px; }
+  }
+  @media (max-width: 420px){
+    .contacto-container{
+      grid-template-columns: 50vw 50vw !important;  /* sigue en 2 columnas */
+      gap: 10px;
+    }
+  }
+
+  /* ======== FORMULARIO ======== */
+  .formulario-box h2{
+    text-align:center; margin:0 0 14px; color:#0a5f0c;
+  }
+  .formulario-box label{
+    display:block; margin:10px 0 6px; font-size:16px; color:#000;
+  }
+  .formulario-box input,
+  .formulario-box textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    background:#fff;
+    color:#000;
+    font-size:15px;
+  }
+  /* ➜ más espacio antes de los botones */
+  .formulario-box textarea{
+    resize:vertical;
+    min-height:120px;
+    margin-bottom: 14px;   /* separación con los botones */
+  }
+
+  /* Botonera pegada abajo y con texto perfectamente centrado */
+  .formulario-botones{
+    margin-top:auto;             /* empuja la botonera al fondo */
+    display:flex;
+    gap:12px;
+  }
+  .btn-enviar, .btn-borrar{
+    flex:1;
+    height: 40px;                /* altura uniforme */
+    padding: 0 12px;
+    border:none;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+
+    /* Centrado perfecto del texto */
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    line-height:1;               /* evita que baje ópticamente */
+  }
+  .btn-enviar{ background:#0c7d10; color:#fff; }
+  .btn-borrar{ background:#c0392b; color:#fff; }
+  .btn-enviar:hover{ background:#0a5f0c; }
+  .btn-borrar:hover{ background:#a62821; }
+
+  /* ======== MAPA ======== */
+  .mapa-box h2{
+    text-align:center;
+    background:#0a7a0d;
+    color:#000;
+    border-radius:14px;
+    padding:6px;
+    margin:0 0 12px;
+  }
+  .mapa-box iframe{
+    flex:1;                  /* se estira para igualar altura con el form */
+    width:100%;
+    min-height:320px;
+    border:none;
+    border-radius:10px;
+  }
+  .mapa-box p{ font-size:16px; color:#000; margin:8px 0 0; }
+  .mapa-box strong{ font-weight:700; font-size:18px; color:#000; }
+</style>
+
+</section>
+
+
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>	&copy; 2025 CYCA-Todos los derechis reservados.  </p> 
+						
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
